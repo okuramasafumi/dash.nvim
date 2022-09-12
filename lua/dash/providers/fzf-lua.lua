@@ -64,7 +64,7 @@ M.dash = function(opts)
   end
 
   -- This sets all the required fzf arguments for `change:reload` callbacks
-  opts = fzf_lua.core.set_fzf_interactive_cb(opts)
+  opts = require('fzf-lua.core').set_fzf_interactive_cb(opts)
   fzf_lua.core.fzf_files(opts)
 end
 
